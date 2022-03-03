@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
 import Tmdb from './Tmdb';
+import MovieRow from './componets/MovieRow';
+
+import './App.css';
 
 export default () => {
 
@@ -8,7 +11,7 @@ export default () => {
 
   useEffect(() => {
     const loadAll = async () => {
-      // égando a lista TOTAL
+      // Pegando a lista TOTAL
       let list = await Tmdb.getHomeList();
       setMovieList(list);
     }
@@ -17,6 +20,15 @@ export default () => {
   }, []);
 
   return (
-    <div> Olá mundo! </div>
+    <div className='page'>
+      Header
+      Destaque
+      <section className='lists'>
+        {movieList.map((item, key) => (
+          <MovieRow key={key} title={item.title} items={item.items} />
+        ))}
+      </section>
+      Rodape
+    </div>
   )
 }
