@@ -7,7 +7,7 @@ import Header from './components/Header';
 
 import './App.css';
 
-export default () => {
+export default function App() {
 
   const [movieList, setMovieList] = useState([]);
   const [featuredData, setFeaturedData] = useState(null);

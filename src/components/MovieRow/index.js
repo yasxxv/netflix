@@ -4,7 +4,7 @@ import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 import './MovieRow.css';
 
-export default ({ title, items }) => {
+export default function MovieRow({ title, items }) {
 
     const [scrollx, setScrollx] = useState(0);
 

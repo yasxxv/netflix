@@ -2,7 +2,7 @@ import React from "react";
 
 import './Header.css';
 
-export default ({ black }) => {
+export default function Header({ black }) {
     return (
         <header className={black ? 'black' : ''}>
             <div className="header--logo">

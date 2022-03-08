@@ -2,7 +2,7 @@ import React from "react";
 
 import './FeaturedMovie.css';
 
-export default ({ item }) => {
+export default function FeaturedMovie({ item }) {
 
     let firsDate = new Date(item.first_air_date);
 
