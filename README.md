@@ -12,6 +12,8 @@ No futuro, pretendo realizar o deploy completo da aplicação.
 
 <img align="right" height="70px" style="padding: 25px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/799px-Netflix_2015_logo.svg.png" alt="Screenshot do Projeto em funcionamento">
 
+### 🔗 <a href="https://myfilmes.netlify.app">Link do site</a>
+
 ## 💻 Tecnologias utilizadas
 
 - React
